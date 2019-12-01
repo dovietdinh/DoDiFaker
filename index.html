@@ -1,23 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Giày Fake</title>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" ref="stylesheet">
+    <title>Giày Faker</title>
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+        
+        li.nav-item>a {
+            font-weight: bolder;
+        }
+        
+        ul.navbar-nav>li {
+            padding-right: 7em;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color:red;" >
-        <div class="row">
-            <div class="col-sm-5 col-lg-4">
-                <p style="background: violet;">ádasdadadasd</p>
-            </div>
-            <div class="col-sm-4">
-                <p>ádasdadadasd</p>
-            </div>
+
+
+    <nav class="navbar navbar-expand-md navbar-expand-sm navbar-light bg-white">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Giày Faker</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Giày </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Adidas</a>
+                        <a class="dropdown-item" href="#">Balenciaga</a>
+                        <a class="dropdown-item" href="#">Vans</a>
+                        <a class="dropdown-item" href="#">Nike</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Dép </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Balenciaga</a>
+                        <a class="dropdown-item" href="#">Crocs</a>
+                        <a class="dropdown-item" href="#">Jordan</a>
+                        <a class="dropdown-item" href="#">Nike</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Giày </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Super Face</span></a>
+                </li>
+            </ul>
         </div>
-    </div>
+
+    </nav>
+
+
+
+
 </body>
+
+
 </html>
