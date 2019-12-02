@@ -1,3 +1,62 @@
+div#adidas>p {
+    font-size: 2em !important;
+    margin-top: 1% !important;
+}
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
 
-/*# sourceMappingURL=style.css.map */
+li.nav-item>a {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+ul.navbar-nav.nav-1>li {
+    padding-right: 7em;
+}
+
+@media (min-width: 600px) {
+    .carousel-inner {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .carousel-inner {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-inner {
+        height: 650px;
+    }
+}
+
+.banner {
+    width: 93%;
+    padding-top: 1%;
+    margin: 0 auto;
+}
+
+.bg-yellow {
+    background: yellow;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-green {
+    background: green;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-title {
+    background: violet;
+    ;
+}
