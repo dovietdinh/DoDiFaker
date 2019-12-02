@@ -272,7 +272,7 @@
     function create_col_product_HTML(hang, name, mony, file_image) {
 
         var mony = formatNumber(mony, '.', ',');
-        var src = "image/" + hang + "/" + file_image;
+        var src = "images/" + hang + "/" + file_image;
         var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> <sup> đ </sup> </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
         $(".row#" + hang).append(html);
     }
@@ -314,16 +314,8 @@
         }
     }
 
-    function appInforproduct(id_product) {
-        loadXMLDoc(URL_product);
-        name = inforProductBasic.name;
-        mony = formatNumber(inforProductBasic.mony, '.', ',');
-        src = "image/" + inforProductBasic.hang + "/" + inforProductBasic.file_image;
-        console.info(inforProductBasic);
 
-    }
-    appInforproduct("@32")
-
+    loadXMLDoc(URL_product)
 
 
 
