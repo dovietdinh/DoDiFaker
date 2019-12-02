@@ -93,6 +93,7 @@
         
         .card {
             margin-top: 2%;
+            margin-bottom: 2%;
         }
     </style>
 
@@ -207,7 +208,7 @@
             <div id="adidas">
                 <div class="container-fluid">
                     <p class="format-name">Adidas</p>
-                    <div class="row">
+                    <div class="row" id="AD">
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
                             <div class="card">
                                 <img class="card-img-top" src="images/adidas/1469170834904_22010.jpg" alt="Card image" style="width:100%">
@@ -218,56 +219,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="card">
-                                <img class="card-img-top" src="images/adidas/1469170834904_22010.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title adidas-name">John Doe</h4>
-                                    <p class="card-text">Giá: <span class="adidas-mony">100000</span><sup>đ</sup></p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="card">
-                                <img class="card-img-top" src="images/adidas/1469170834904_22010.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title adidas-name">John Doe</h4>
-                                    <p class="card-text">Giá: <span class="adidas-mony">100000</span><sup>đ</sup></p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
-                            <div class="card">
-                                <img class="card-img-top" src="images/adidas/1469170834904_22010.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title adidas-name">John Doe</h4>
-                                    <p class="card-text">Giá: <span class="adidas-mony">100000</span><sup>đ</sup></p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
+
                 </div>
             </div>
-
-
             <!--balenciaga-giay-->
             <div id="balenciaga-giay">
                 <div class="container-fluid">
                     <p class="format-name">Balenciaga</p>
-                    <div class="row">
+                    <div class="row" id="BLC_G">
                     </div>
                 </div>
             </div>
 
-            <div id="test" onclick="loadXMLDoc()">testxml</div>
+            <div id="test" onclick="">testxml</div>
             <!--vans-->
             <div id="vans">
                 <div class="container-fluid">
                     <p class="format-name">Vans</p>
-                    <div class="row">
+                    <div class="row" id="VA">
+
                     </div>
                 </div>
             </div>
@@ -280,10 +252,8 @@
 </body>
 
 <script>
-    var name_product = ['Adidas', 'Balenciaga', 'Nike', 'Vans'];
-    var product_vans = [10000, 20000, 2000, 1212] //ten
-        +
-        ['vấ', 'ádasdasd', 'ádasd']; // giá
+    var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/Giay/Giay%20Vans.xml';
+
 
     function formatNumber(nStr, decSeperate, groupSeperate) { //use formatNumber(number input,'.',',')
         nStr += '';
@@ -297,14 +267,18 @@
         return x1 + x2;
     }
 
-    function create_col_product_HTML(product_name, mony, id_product) {
 
+
+    function create_col_product_HTML(hang, name, mony, file_image) {
+
+        var mony = formatNumber(mony, '.', ',');
+        var src = "image/" + hang + "/" + file_image;
+        var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> <sup> đ </sup> </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
+        $(".row#" + hang).append(html);
     }
 
 
-    var URL = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/bangiay.xml';
-
-    function loadXMLDoc() {
+    function loadXMLDoc(url) {
         var xmlhttp;
         if (window.XMLHttpRequest) {
             xmlhttp = new XMLHttpRequest();
@@ -312,15 +286,49 @@
             // code for older browsers
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
+
         xmlhttp.onreadystatechange = function() {
+
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("test").innerHTML =
-                    this.responseText;
+                getXML(xmlhttp.responseText);
+                // console.log('getsucced');
             }
         };
-        xmlhttp.open("GET", URL, true);
+        xmlhttp.open("GET", url, true);
         xmlhttp.send();
+
     }
+
+
+    function getXML(xml) {
+        var parent = new DOMParser();
+        var xmlDoc = parent.parseFromString(xml, 'text/xml'); //create tree dom xml
+        console.info('getsucced' + xmlDoc);
+        var x = xmlDoc.getElementsByTagName('Giay_x0020_Vans');
+        for (var i = 0; i < x.length; i++) {
+            var name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            var mony = x[i].getElementsByTagName("mony")[0].childNodes[0].nodeValue;
+            var file_image = x[i].getElementsByTagName("file_image")[0].childNodes[0].nodeValue;
+            var hang = x[i].getElementsByTagName("hang")[0].childNodes[0].nodeValue;
+            create_col_product_HTML(hang, name, mony, file_image);
+        }
+    }
+
+    function appInforproduct(id_product) {
+        loadXMLDoc(URL_product);
+        name = inforProductBasic.name;
+        mony = formatNumber(inforProductBasic.mony, '.', ',');
+        src = "image/" + inforProductBasic.hang + "/" + inforProductBasic.file_image;
+        console.info(inforProductBasic);
+
+    }
+    appInforproduct("@32")
+
+
+
+
+
+    // main
 </script>
 
 
