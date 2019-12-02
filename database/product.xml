@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datagiay>
+    <infoproduct>
+        <ten>Giang</ten>
+        <gia>20000</gia>
+        <loai>vans</loai>
+    </infoproduct>
+    <infoproduct>
+        <ten>Dat</ten>
+        <gia>4000</gia>
+        <loai>Nike</loai>
+    </infoproduct>
+</datagiay>
