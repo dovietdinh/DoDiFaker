@@ -262,7 +262,7 @@
                 </div>
             </div>
 
-
+            <div id="test" onclick="loadXMLDoc()">testxml</div>
             <!--vans-->
             <div id="vans">
                 <div class="container-fluid">
@@ -299,6 +299,27 @@
 
     function create_col_product_HTML(product_name, mony, id_product) {
 
+    }
+
+
+    var URL = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/product.xml';
+
+    function loadXMLDoc() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for older browsers
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("test").innerHTML =
+                    this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "/database/product.xml", true);
+        xmlhttp.send();
     }
 </script>
 
