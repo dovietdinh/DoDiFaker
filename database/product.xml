@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T08:16:15">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T08:37:57">
 <product>
 <ID>1</ID>
 <name>aidasd</name>
 <mony>232</mony>
-<file_image>4c438b9e6cee89b0d0ff.jpg</file_image>
+<file_image>1f986162e27d05235c6c.jpg</file_image>
 <soluong>2320</soluong>
 <hang>AD</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>2</ID>
@@ -16,7 +16,7 @@
 <file_image>1a53b1f85e0ebe50e71f.jpg</file_image>
 <soluong>2323</soluong>
 <hang>NK</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>3</ID>
@@ -25,24 +25,25 @@
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
 <soluong>23230</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>4</ID>
 <name>sp</name>
 <mony>232</mony>
+<file_image>0f1d6fe24e52a90cf043.jpg</file_image>
 <soluong>2323</soluong>
 <hang>SF</hang>
-<loai>spf</loai>
+<loai>SF</loai>
 </product>
 <product>
 <ID>5</ID>
 <name>23</name>
 <mony>230</mony>
-<file_image>4c438b9e6cee89b0d0ff.jpg</file_image>
+<file_image>Balenciaga-triple-S-vàng-trắng.jpg</file_image>
 <soluong>0</soluong>
 <hang>BLC_G</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>6</ID>
@@ -51,7 +52,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>7</ID>
@@ -60,7 +61,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>8</ID>
@@ -69,7 +70,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>9</ID>
@@ -78,7 +79,7 @@
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>10</ID>
@@ -87,7 +88,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>11</ID>
@@ -96,7 +97,7 @@
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>12</ID>
@@ -105,7 +106,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>13</ID>
@@ -114,7 +115,7 @@
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>14</ID>
@@ -123,7 +124,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>15</ID>
@@ -132,7 +133,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>16</ID>
@@ -141,7 +142,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>17</ID>
@@ -150,7 +151,7 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>18</ID>
@@ -159,6 +160,6 @@
 <file_image>0b383a4c11ddf083a9cc.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
-<loai>giay</loai>
+<loai>Giay</loai>
 </product>
 </dataroot>

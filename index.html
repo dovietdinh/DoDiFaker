@@ -293,8 +293,7 @@
 <script>
     var url = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/';
 
-    var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/Giay/Giay%20Vans.xml',
-    ];
+    var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/product.xml'
 
 
     function formatNumber(nStr, decSeperate, groupSeperate) { //use formatNumber(number input,'.',',')
@@ -347,13 +346,15 @@
         var parent = new DOMParser();
         var xmlDoc = parent.parseFromString(xml, 'text/xml'); //create tree dom xml
         console.info(xmlDoc);
-        var x = xmlDoc.getElementsByTagName('Giay_x0020_Vans');
-        for (var i = 0; i < x.length; i++) {
+        var x = xmlDoc.getElementsByTagName('product');
+        for (var i = 0; i < x.length; i++) { // chưa xử lý lỗi
             var name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
             var mony = x[i].getElementsByTagName("mony")[0].childNodes[0].nodeValue;
             var file_image = x[i].getElementsByTagName("file_image")[0].childNodes[0].nodeValue;
             var hang = x[i].getElementsByTagName("hang")[0].childNodes[0].nodeValue;
             var loai = x[i].getElementsByTagName("loai")[0].childNodes[0].nodeValue;
+
+
             create_col_product_HTML(hang, name, mony, file_image, loai);
         }
     }
