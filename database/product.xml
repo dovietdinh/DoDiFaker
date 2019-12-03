@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T08:59:22">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T19:32:31">
 <product>
 <ID>1</ID>
 <name>aidasd</name>
@@ -161,5 +161,104 @@
 <soluong>0</soluong>
 <hang>VA</hang>
 <loai>Giay</loai>
+</product>
+<product>
+<ID>19</ID>
+<name>Dép BLC</name>
+<mony>450</mony>
+<file_image>75cbac8ade61303f6970.jpg</file_image>
+<soluong>3</soluong>
+<hang>BLC_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>20</ID>
+<name>Dép BLC 1</name>
+<mony>34</mony>
+<file_image>89748237f0dc1e8247cd.jpg</file_image>
+<soluong>34</soluong>
+<hang>BLC_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>21</ID>
+<name>Dép BLC 2</name>
+<mony>230</mony>
+<file_image>b71e2a5d58b6b6e8efa7.jpg</file_image>
+<soluong>230</soluong>
+<hang>BLC_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>22</ID>
+<name>Nike 1</name>
+<mony>2320</mony>
+<file_image>8a08a97d89b969e730a8.jpg</file_image>
+<soluong>23</soluong>
+<hang>NK_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>23</ID>
+<name>Nike 2</name>
+<mony>3323</mony>
+<file_image>3225609cda65393b6074.jpg</file_image>
+<soluong>230</soluong>
+<hang>NK_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>24</ID>
+<name>Nke 2</name>
+<mony>2330</mony>
+<file_image>97d789cec0da22847bcb.jpg</file_image>
+<soluong>0</soluong>
+<hang>NK_D</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>25</ID>
+<name>Cros</name>
+<mony>4340</mony>
+<file_image>4ae3e3cb48caad94f4db.jpg</file_image>
+<soluong>23</soluong>
+<hang>CR</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>26</ID>
+<name>Cros</name>
+<mony>230</mony>
+<file_image>5f1bae0294a076fe2fb1.jpg</file_image>
+<soluong>23</soluong>
+<hang>CR</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>27</ID>
+<name>Cross</name>
+<mony>230</mony>
+<file_image>19b95074eff80aa653e9.jpg</file_image>
+<soluong>4</soluong>
+<hang>CR</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>28</ID>
+<name>Jods</name>
+<mony>2320</mony>
+<file_image>2bbf64116c298377da38.jpg</file_image>
+<soluong>23</soluong>
+<hang>JD</hang>
+<loai>Dep</loai>
+</product>
+<product>
+<ID>29</ID>
+<name>Josdf</name>
+<mony>3440</mony>
+<file_image>4c6b71a704afeaf1b3be.jpg</file_image>
+<soluong>34</soluong>
+<hang>JD</hang>
+<loai>Dep</loai>
 </product>
 </dataroot>
