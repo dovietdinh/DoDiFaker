@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T08:37:57">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-03T08:59:22">
 <product>
 <ID>1</ID>
 <name>aidasd</name>
@@ -15,7 +15,7 @@
 <mony>2323</mony>
 <file_image>1a53b1f85e0ebe50e71f.jpg</file_image>
 <soluong>2323</soluong>
-<hang>NK</hang>
+<hang>NK_G</hang>
 <loai>Giay</loai>
 </product>
 <product>
@@ -23,7 +23,7 @@
 <name>vass</name>
 <mony>23430</mony>
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
-<soluong>23230</soluong>
+<soluong>0</soluong>
 <hang>VA</hang>
 <loai>Giay</loai>
 </product>
@@ -32,9 +32,9 @@
 <name>sp</name>
 <mony>232</mony>
 <file_image>0f1d6fe24e52a90cf043.jpg</file_image>
-<soluong>2323</soluong>
+<soluong>1</soluong>
 <hang>SF</hang>
-<loai>SF</loai>
+<loai>Giay</loai>
 </product>
 <product>
 <ID>5</ID>
