@@ -164,32 +164,32 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="#adidas"><img src="images/adidas/040e19f3fe831bdd4292.jpg" alt="addias" width="100%" height="100%"></a>
+                    <a href="#adidas"><img src="images/Giay/AD/040e19f3fe831bdd4292.jpg" alt="addias" width="100%" height="100%"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#adidas"><img src="images/adidas/4c438b9e6cee89b0d0ff.jpg" alt="addias" width="100%" height="100%"></a>
+                    <a href="#adidas"><img src="images/Giay/AD/4c438b9e6cee89b0d0ff.jpg" alt="addias" width="100%" height="100%"></a>
                 </div>
 
                 <div class="carousel-item">
                     <a href="#nike">
-                        <img src="images/nike/72b8d01b3feddfb386fc.jpg" alt="nike" width="100%" height="100%">
+                        <img src="images/Giay/NK_G/72b8d01b3feddfb386fc.jpg" alt="nike" width="100%" height="100%">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#nike">
-                        <img src="images/nike/2e649313016aef34b67b.jpg" alt="nike" width="100%" height="100%">
+                        <img src="images/Giay/NK_G/1a53b1f85e0ebe50e71f.jpg" alt="nike" width="100%" height="100%">
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#vans"> <img src="images/vans/48e37a157fd89f86c6c9.jpg" alt="vans" width="100%" height="100%">
+                    <a href="#vans"> <img src="images/Giay/VA/48e37a157fd89f86c6c9.jpg" alt="vans" width="100%" height="100%">
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#vans"></a><img src="images/vans/59672633ae374e691726.jpg" alt="vans" width="100%" height="100%">
+                    <a href="#vans"></a><img src="images/Giay/VA/59672633ae374e691726.jpg" alt="vans" width="100%" height="100%">
                 </div>
                 <div class="carousel-item">
-                    <a href="#vans"> <img src="images/vans/26907229_1563192520444293_3786401844908349106_n.jpg" alt="vans" width="100%" height="100%">
+                    <a href="#vans"> <img src="images/Giay/VA/26907229_1563192520444293_3786401844908349106_n.jpg" alt="vans" width="100%" height="100%">
                     </a>
                 </div>
             </div>
@@ -209,19 +209,7 @@
                 <div class="container-fluid">
                     <p class="format-name">Adidas</p>
                     <div class="row" id="AD">
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
-                            <div class="card">
-                                <img class="card-img-top" src="images/adidas/1469170834904_22010.jpg" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title adidas-name">John Doe</h4>
-                                    <p class="card-text">Giá: <span class="adidas-mony">100000</span><sup>đ</sup></p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
             </div>
             <!--balenciaga-giay-->
@@ -232,14 +220,65 @@
                     </div>
                 </div>
             </div>
+            <div id="nike-giay">
+                <div class="container-fluid">
+                    <p class="format-name">Nike</p>
+                    <div class="row" id="NK">
 
-            <div id="test" onclick="">testxml</div>
-            <!--vans-->
+                    </div>
+                </div>
+            </div>
+            <!--Vans-->
             <div id="vans">
                 <div class="container-fluid">
                     <p class="format-name">Vans</p>
                     <div class="row" id="VA">
 
+                    </div>
+                </div>
+            </div>
+
+            <!--supperface -->
+            <div id="superFace">
+                <div class="container-fluid">
+                    <p class="format-name">Supper Face</p>
+                    <div class="row" id="SF">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dep">
+            <div id="balenciaga-dep">
+                <div class="container-fluid">
+                    <p class="format-name">balenciaga Dep</p>
+                    <div class="row" id="BLC-D">
+                    </div>
+                </div>
+            </div>
+
+            <!--crop-dep-->
+            <div id="crocs">
+                <div class="container-fluid">
+                    <p class="format-name">Crocs</p>
+                    <div class="row" id="CR">
+                    </div>
+                </div>
+            </div>
+
+            <!--Jordan-->
+            <div id="jordan">
+                <div class="container-fluid">
+                    <p class="format-name">Jordan</p>
+                    <div class="row" id="JD">
+                    </div>
+                </div>
+            </div>
+            <!--Jordan-->
+            <div id="nike-dep">
+                <div class="container-fluid">
+                    <p class="format-name">Dep Nike</p>
+                    <div class="row" id="NK-D">
                     </div>
                 </div>
             </div>
@@ -252,7 +291,10 @@
 </body>
 
 <script>
-    var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/Giay/Giay%20Vans.xml';
+    var url = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/';
+
+    var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/Giay/Giay%20Vans.xml',
+    ];
 
 
     function formatNumber(nStr, decSeperate, groupSeperate) { //use formatNumber(number input,'.',',')
@@ -269,10 +311,11 @@
 
 
 
-    function create_col_product_HTML(hang, name, mony, file_image) {
+    function create_col_product_HTML(hang, name, mony, file_image, loai) {
 
         var mony = formatNumber(mony, '.', ',');
-        var src = "images/" + hang + "/" + file_image;
+        loai = loai == "giay" ? "Giay/" : "Dep/";
+        var src = "images/" + loai + hang + "/" + file_image;
         var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> <sup> đ </sup> </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
         $(".row#" + hang).append(html);
     }
@@ -303,14 +346,15 @@
     function getXML(xml) {
         var parent = new DOMParser();
         var xmlDoc = parent.parseFromString(xml, 'text/xml'); //create tree dom xml
-        console.info('getsucced' + xmlDoc);
+        console.info(xmlDoc);
         var x = xmlDoc.getElementsByTagName('Giay_x0020_Vans');
         for (var i = 0; i < x.length; i++) {
             var name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
             var mony = x[i].getElementsByTagName("mony")[0].childNodes[0].nodeValue;
             var file_image = x[i].getElementsByTagName("file_image")[0].childNodes[0].nodeValue;
             var hang = x[i].getElementsByTagName("hang")[0].childNodes[0].nodeValue;
-            create_col_product_HTML(hang, name, mony, file_image);
+            var loai = x[i].getElementsByTagName("loai")[0].childNodes[0].nodeValue;
+            create_col_product_HTML(hang, name, mony, file_image, loai);
         }
     }
 
