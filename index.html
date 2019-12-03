@@ -89,11 +89,61 @@
             font-size: 2.1em;
             margin-top: 1%;
             margin-bottom: 1px;
+            padding-left: 1%;
         }
         
         .card {
             margin-top: 2%;
             margin-bottom: 2%;
+        }
+        /*goto top*/
+        
+        #button {
+            display: inline-block;
+            background-color: #FF9800;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s, opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+        
+        #button::after {
+            content: "\^";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 5em;
+            line-height: 70px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        #button:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+        
+        #button:active {
+            background-color: #555;
+        }
+        
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Styles for the content section */
+        
+        @media (min-width: 500px) {
+            #button {
+                margin: 30px;
+            }
         }
     </style>
 
@@ -205,6 +255,7 @@
 
     <div class="product">
         <div class="giay" id="giay">
+            <h3 style="background: linear-gradient(45deg, #bd04f9, #9c898933);color: #ffffff;margin-top: 1%; padding: 1%;border-radius: 8px;">Giày</h3>
             <div id="adidas">
                 <div class="container-fluid">
                     <p class="format-name">Adidas</p>
@@ -249,10 +300,11 @@
             </div>
         </div>
         <div class="dep">
+            <h3 style="background: linear-gradient(45deg, #2af904, #9c898933);color: #ffffff; padding: 1%;border-radius: 8px;">Dép</h3>
             <div id="balenciaga-dep">
                 <div class="container-fluid">
-                    <p class="format-name">balenciaga Dep</p>
-                    <div class="row" id="BLC-D">
+                    <p class="format-name">Balenciaga</p>
+                    <div class="row" id="BLC_D">
                     </div>
                 </div>
             </div>
@@ -278,26 +330,24 @@
             <div id="nike-dep">
                 <div class="container-fluid">
                     <p class="format-name">Dep Nike</p>
-                    <div class="row" id="NK-D">
+                    <div class="row" id="NK_D">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <a id="button" onclick="topFunction()"></a>
 
 
 </body>
 
 <script>
-    var url = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/';
-
     var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/product.xml'
 
 
     function formatNumber(nStr, decSeperate, groupSeperate) { //use formatNumber(number input,'.',',')
-        nStr += '';
+        nStr += '000 ';
         x = nStr.split(decSeperate);
         x1 = x[0];
         x2 = x.length > 1 ? '.' + x[1] : '';
@@ -308,14 +358,12 @@
         return x1 + x2;
     }
 
-
-
     function create_col_product_HTML(hang, name, mony, file_image, loai) {
 
         var mony = formatNumber(mony, '.', ',');
 
         var src = "images/" + loai + "/" + hang + "/" + file_image;
-        var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> <sup> đ </sup> </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
+        var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> VNĐ </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
         $(".row#" + hang).append(html);
     }
 
@@ -347,14 +395,12 @@
         var xmlDoc = parent.parseFromString(xml, 'text/xml'); //create tree dom xml
         console.info(xmlDoc);
         var x = xmlDoc.getElementsByTagName('product');
-        for (var i = 0; i < x.length; i++) { // chưa xử lý lỗi
+        for (var i = 0; i < x.length; i++) { // chưa xử lý lỗi dũ kiệu đầu vào
             var name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
             var mony = x[i].getElementsByTagName("mony")[0].childNodes[0].nodeValue;
             var file_image = x[i].getElementsByTagName("file_image")[0].childNodes[0].nodeValue;
             var hang = x[i].getElementsByTagName("hang")[0].childNodes[0].nodeValue;
             var loai = x[i].getElementsByTagName("loai")[0].childNodes[0].nodeValue;
-
-
             create_col_product_HTML(hang, name, mony, file_image, loai);
         }
     }
@@ -366,6 +412,24 @@
 
 
     // main
+</script>
+<script>
+    var btn = $('#button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '1000');
+    });
 </script>
 
 
