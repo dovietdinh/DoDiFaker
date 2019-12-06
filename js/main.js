@@ -15,8 +15,6 @@ btn.on('click', function(e) {
     }, '1000');
 });
 
-
-
 function formatNumber(nStr, decSeperate, groupSeperate) { //use formatNumber(number input,'.',',')
     nStr += '000 ';
     x = nStr.split(decSeperate);
@@ -35,7 +33,7 @@ function create_col_product_HTML(hang, name, mony, file_image, loai) {
 
     var src = "images/" + loai + "/" + hang + "/" + file_image;
     var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> VNĐ </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
-    $(".row#" + hang).append(html);
+    $(".row#" + hang).prepend(html);
 
 }
 
@@ -62,20 +60,17 @@ function getXML(xml) {
     var parent = new DOMParser();
     var xmlDoc = parent.parseFromString(xml, 'text/xml'); //create tree dom xml
     var x = xmlDoc.getElementsByTagName('product');
-    for (var i = 0; i < x.length; i++) { // chưa xử lý lỗi dũ kiệu đầu vào
+    for (var i = 0; i < x.length; i++) { // chưa xử lý lỗi dữ kiệu đầu vào
         var name = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
         var mony = x[i].getElementsByTagName("mony")[0].childNodes[0].nodeValue;
         var file_image = x[i].getElementsByTagName("file_image")[0].childNodes[0].nodeValue;
         var hang = x[i].getElementsByTagName("hang")[0].childNodes[0].nodeValue;
         var loai = x[i].getElementsByTagName("loai")[0].childNodes[0].nodeValue;
         create_col_product_HTML(hang, name, mony, file_image, loai);
-
-
     }
 
 }
 var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/product.xml';
 loadXMLDoc(URL_product);
-
 var d = new Date();
 $('#date').text("Desgin by Vũ Tấn Đạt © " + d.getFullYear());
