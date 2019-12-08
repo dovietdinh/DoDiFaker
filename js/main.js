@@ -75,4 +75,4 @@ function getXML(xml) {
 var URL_product = 'https://raw.githubusercontent.com/dovietdinh/giayfake/master/database/product.xml';
 loadXMLDoc(URL_product);
 var d = new Date();
-$('#date').text("Desgin by Vũ Tấn Đạt © " + d.getFullYear());
+$('#date').text("Desgin by Tấn Đạt © " + d.getFullYear());
