@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-08T11:00:41">
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2019-12-08T14:44:44">
 <product>
 <ID>1</ID>
 <name>Prophere f1 xám</name>
@@ -670,6 +670,15 @@
 <file_image>0e237aa9daf83aa663e9.jpg</file_image>
 <soluong>0</soluong>
 <hang>VA</hang>
+<loai>Giay</loai>
+</product>
+<product>
+<ID>96</ID>
+<name>Định à à định đây</name>
+<mony>230</mony>
+<file_image>2f73ffbf16fef0a0a9ef-1.jpg</file_image>
+<soluong>0</soluong>
+<hang>SF</hang>
 <loai>Giay</loai>
 </product>
 </dataroot>
