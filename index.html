@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" ref="stylesheet">
-    <title>ĐoĐiFaker</title>
+    <title>DoDiFaker</title>
     <!--Bootstrap-->
     <link rel="shortcut icon" type="image/png" href="images/Icon/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -135,6 +135,23 @@
             height: 80px;
             padding: 0;
             margin: 0;
+        }
+        
+        @media (min-width: 300px) {
+            #image-footer {
+                margin-top: -23px;
+            }
+        }
+        
+        @media (min-width: 600px) {
+            #image-footer {
+                margin-top: -80px;
+            }
+        }
+        
+        #image-footer {
+            width: 200px;
+            height: 200px;
         }
     </style>
 
@@ -338,23 +355,23 @@
 
         <div class=" footer " style="margin:2px 0 0 0;  ">
 
-            <h1 style="padding:0.5em 0 0 0.5em ; "> ĐoĐiFaker</h1>
+            <h1 style="padding:0.5em 0 0 0.5em ; "> DoDiFaker</h1>
 
 
             <h6 style="padding: 0.5em 0 0 1.5em;">About us</h6>
             <div class="container-fluid ">
                 <div class="row ">
-                    <div class="col-sm-6 col-xl-6 " style="padding-left:4em">
+                    <div class="col-sm-5 col-md-4 col-xl-4 " style="padding-left:4em">
                         <p>Email: <a class=" btn-link " href="mailto: dovietding123@gmail.com ">dovietding123@gmail.com</a> </p>
                         <p>SĐT: <a class=" bnt-link " href=" tel:0927010872 ">0927010872</a></p>
                     </div>
 
-                    <div class="col-sm-6 col-xl-3 ">
+                    <div class="col-sm-3 col-md-4 col-xl-4 " style="padding-left:4em">
                         <p><a class=" btn-link " href="https://www.facebook.com/DinhDo0911 "><i class="fab fa-facebook "></i> Facebook</a> </p>
                         <p><a class="bnt-link " href="https://m.me/DinhDo0911 "><i class="fab fa-facebook-messenger "></i> Messenger</a></p>
                     </div>
-                    <div class="col-sm-2 col-xl-3 ">
-                        <div style="width:200px;height:200px;margin-top: -23px;">
+                    <div class="col-sm-4 col-md-4 col-xl-4 ">
+                        <div id="image-footer">
                             <image src="images/Icon/logo1.png" width="100%" height="100%" />
                         </div>
                     </div>
