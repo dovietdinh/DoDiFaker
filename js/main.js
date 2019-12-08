@@ -34,7 +34,7 @@ function create_col_product_HTML(hang, name, mony, file_image, loai) {
     var mony = formatNumber(mony, '.', ',');
 
     var src = "images/" + loai + "/" + hang + "/" + file_image;
-    var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "Card image"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> VNĐ </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
+    var html = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 "><div class="card"> <img class = "card-img-top" src="' + src + '"   alt = "src: ' + src + '"style = "width:100%" > <div class = "card-body" > <h4 class = "card-title adidas-name" > ' + name + ' </h4> <p class = "card-text"> Giá: <span class = "adidas-mony"> ' + mony + ' </span> VNĐ </p> <a href = "#"class = "btn btn-primary"> See Profile </a> </div> </div> </div> ';
     $(".row#" + hang).prepend(html);
 
 }
