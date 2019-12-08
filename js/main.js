@@ -3,8 +3,10 @@ var btn = $('#button');
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
         btn.addClass('show');
+        $("a.navbar-brand").css('height', '52px');
     } else {
         btn.removeClass('show');
+        $("a.navbar-brand").css('height', '80px');
     }
 });
 
