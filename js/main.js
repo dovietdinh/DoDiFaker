@@ -3,10 +3,10 @@ var btn = $('#button');
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
         btn.addClass('show');
-        $("a.navbar-brand").css('height', '52px');
+        $("a.navbar-brand").css('transform', 'scale(0.9,0.9)').css('height', '60px');
     } else {
         btn.removeClass('show');
-        $("a.navbar-brand").css('height', '80px');
+        $("a.navbar-brand").css('transform', ' scale(1,1)').css('height', '80px');
     }
 });
 
